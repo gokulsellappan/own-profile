@@ -13,7 +13,7 @@ function Contact() {
         </ContactUsTitle>
         <ContactDetail>
           <EmailIcon fontSize="large" />
-          <span>gokulsellappan@gmail.com</span>
+          <span>gokulsellappan3@gmail.com</span>
         </ContactDetail>
         <ContactDetail>
           <LocationOnIcon fontSize="large" />

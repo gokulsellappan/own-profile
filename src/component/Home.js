@@ -2,11 +2,22 @@ import React from "react";
 import styled from "styled-components";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-scroll";
+import "./css/Home.css";
 
 function Home() {
   return (
-    <Container id="home">
-      <Section>
+    <Container id="home" className="area">
+      <Section className="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
         <Profile>
           <div>
             <img src="/images/gokul.jpg" alt="" />
@@ -18,7 +29,11 @@ function Home() {
               <span>
                 <Typewriter
                   options={{
-                    strings: ["BlockChainDeveloper", "QA Engineer"],
+                    strings: [
+                      "BlockChainDeveloper",
+                      "QA Engineer",
+                      "Web3 Developer",
+                    ],
                     autoStart: true,
                     loop: true,
                   }}
@@ -27,7 +42,7 @@ function Home() {
             </AnimationContent>
             <NameContent>I'm Gokul Sellappan</NameContent>
             <Link to="portfolio" smooth={true} duration={1000}>
-              <PortfolioButton >My Portfolio</PortfolioButton>
+              <PortfolioButton>My Portfolio</PortfolioButton>
             </Link>
           </Subcontent>
         </Content>
@@ -75,7 +90,7 @@ const Section = styled.div`
   }
 `;
 const Profile = styled.div`
-  width: 356px;
+  width: 385px;
   height: 380px;
   padding: 0 12px 0 12px;
   line-height: 24px;

@@ -19,7 +19,7 @@ function Header() {
           <a>Gokul</a>
         </Name>
         <Mail>
-          <span>gokulsellappan@gmail.com</span>
+          <span>gokulsellappan3@gmail.com</span>
         </Mail>
       </Content>
       <BurgarNav show={burgerStatus}>

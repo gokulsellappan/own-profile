@@ -9,33 +9,52 @@ function Portfolio() {
           <span>My Porfolio</span>
         </ProjectTitle>
         <ProjectContainer>
-          <ProjectBox>
-            <img src="/images/Exchange.png" alt="" />
-            <Content>
-              <TitleOne>
-                <span>Exchange </span>
-              </TitleOne>
-              <TitleContent>Trade</TitleContent>
-            </Content>
-          </ProjectBox>
-          <ProjectBox>
-            <img src="/images/LinkedIn.png" alt="" />
-            <Content>
-              <TitleOne>
-                <span>Twitter </span>
-              </TitleOne>
-              <TitleContent>Social Media</TitleContent>
-            </Content>
-          </ProjectBox>
-          <ProjectBox>
-            <img src="/images/Game.png" alt="" />
-            <Content>
-              <TitleOne>
-                <span>Game </span>
-              </TitleOne>
-              <TitleContent>NFT</TitleContent>
-            </Content>
-          </ProjectBox>
+          <a
+            href="https://purple-bar-9482.on.fleek.co/"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <ProjectBox>
+              <img src="/images/Exchange01.png" alt="" />
+              <Content>
+                <TitleOne>
+                  <span>Exchange </span>
+                </TitleOne>
+                <TitleContent>Trade</TitleContent>
+              </Content>
+            </ProjectBox>
+          </a>
+
+          <a
+            href="https://rapid-mouse-5489.on.fleek.co/"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <ProjectBox>
+              <img src="/images/NFTMarketplace.png" alt="" />
+              <Content>
+                <TitleOne>
+                  <span>NFT MarketPlace </span>
+                </TitleOne>
+                <TitleContent>NFT</TitleContent>
+              </Content>
+            </ProjectBox>
+          </a>
+          <a
+            href="/images/inprogress.jpg"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <ProjectBox>
+              <img src="/images/Game.png" alt="" />
+              <Content>
+                <TitleOne>
+                  <span>Game </span>
+                </TitleOne>
+                <TitleContent>NFT</TitleContent>
+              </Content>
+            </ProjectBox>
+          </a>
         </ProjectContainer>
       </Project>
     </Container>
@@ -55,7 +74,6 @@ const Container = styled.div`
   display: black;
   padding: 112px 0 112px 0;
   @media (max-width: 768px) {
-    padding: 90px 0 90px 0;
     height: 100%;
     width: 100%;
   }
@@ -80,6 +98,11 @@ const ProjectTitle = styled.div`
 
 const ProjectContainer = styled.div`
   display: flex;
+  @media (max-width: 768px) {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
 `;
 
 const ProjectBox = styled.div`

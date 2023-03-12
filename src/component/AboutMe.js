@@ -9,21 +9,38 @@ function AboutMe() {
           <SelfData>
             <Name>I'm Gokul</Name>
             <Description>
-              Hi! There are many variations of passages of Lorem Ipsum
-              available, but the majority have suffered alteration in some form,
-              by injected humour, or randomised words which don't look even
-              slightly believable.
+              Hi! I am a skilled blockchain developer with expertise in
+              Ethereum, NFT, DeFi, and Corda. My passion for blockchain
+              technology started with the creation of smart contracts on
+              Ethereum, and has since expanded to other platforms and
+              applications. In my current role, I have led the development of
+              several successful projects, including the implementation of NFTs
+              for digital assets and the creation of DeFi protocols for lending
+              and borrowing. I have also worked with Corda to develop secure and
+              efficient solutions for financial institutions.
             </Description>
             <SocialIcon>
-              <FaceBook>
-                <span>f</span>
-              </FaceBook>
-              <LinkedIn>
-                <span>in</span>
-              </LinkedIn>
-              <Git>
-                <span>git</span>
-              </Git>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/gokul.rock.313"
+                style={{ textDecoration: "none" }}
+              >
+                <FaceBook>f</FaceBook>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/gokul-sellappan-79b74b241/"
+                style={{ textDecoration: "none" }}
+              >
+                <LinkedIn>in</LinkedIn>
+              </a>
+              <a
+                target="_blank"
+                href="https://github.com/gokulsellappan"
+                style={{ textDecoration: "none" }}
+              >
+                <Git>git</Git>
+              </a>
             </SocialIcon>
 
             <Download>
@@ -35,12 +52,20 @@ function AboutMe() {
           <SelfSkill>
             <SkillTitle>My Skills</SkillTitle>
             <FirstSkill>
-              <span>Solidity 70%</span>
+              <span>Solidity 90%</span>
+              <progress value="90" max="100" />
+            </FirstSkill>
+            <FirstSkill>
+              <span>NFT & Web3 70%</span>
               <progress value="70" max="100" />
             </FirstSkill>
             <FirstSkill>
-              <span>web3.js 70%</span>
-              <progress value="70" max="100" />
+              <span>React 80%</span>
+              <progress value="80" max="100" />
+            </FirstSkill>
+            <FirstSkill>
+              <span>R3 Corda 60%</span>
+              <progress value="60" max="100" />
             </FirstSkill>
             <FirstSkill>
               <span>Quality Assurance 90%</span>
@@ -148,15 +173,8 @@ const FaceBook = styled.div`
   text-align: center;
   padding: 8px 8px 8px 8px;
   margin-right: 8px;
-  span {
-    color: white;
-    background: transparent;
-    height: 16px;
-    width: 10px;
-    top: 8px;
-    font-size: 18px;
-    font-weight: 700;
-  }
+  font-weight: 700;
+  color: white;
 `;
 
 const LinkedIn = styled.div`
@@ -168,15 +186,8 @@ const LinkedIn = styled.div`
   text-align: center;
   padding: 8px 8px 8px 8px;
   margin-right: 8px;
-  span {
-    color: white;
-    background: transparent;
-    height: 16px;
-    width: 10px;
-    top: 8px;
-    font-size: 18px;
-    font-weight: 700;
-  }
+  font-weight: 700;
+  color: white;
 `;
 
 const Git = styled.div`
@@ -188,15 +199,8 @@ const Git = styled.div`
   text-align: center;
   padding: 8px 8px 8px 8px;
   margin-right: 8px;
-  span {
-    color: white;
-    background: transparent;
-    height: 16px;
-    width: 10px;
-    top: 8px;
-    font-size: 16px;
-    font-weight: 700;
-  }
+  font-weight: 700;
+  color: white;
 `;
 
 const Download = styled.button`
@@ -231,6 +235,7 @@ const SkillSet = styled.div`
   max-width: auto;
   display: flex;
   background-color: #f4f6f9;
+
   @media (max-width: 768px) {
     padding: 50px 0 0 0;
     position: relative;
@@ -274,16 +279,18 @@ const FirstSkill = styled.div`
     text-align: center;
     top: 0;
     left: 0;
+    animation: load 5s normal forwards;
   }
-  progress {
-    background: black;
+
+  @keyframes load {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100;
+    }
   }
   progress::-webkit-progress-value {
     background: #0dc991;
-    transition: 1s ease;
-    transition-delay: 0.5s;
-  }
-  progress::-webkit-progress-bar {
-    background: black;
   }
 `;

@@ -6,15 +6,33 @@ function Footer() {
     <Container>
       <Content>
         <SocialIcon>
-          <FaceBook>
-            <span>f</span>
-          </FaceBook>
-          <LinkedIn>
-            <span>in</span>
-          </LinkedIn>
-          <Git>
-            <span>git</span>
-          </Git>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/gokul.rock.313"
+            style={{ textDecoration: "none" }}
+          >
+            <FaceBook>
+              <a>f</a>
+            </FaceBook>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/gokul-sellappan-79b74b241/"
+            style={{ textDecoration: "none" }}
+          >
+            <LinkedIn>
+              <a>in</a>
+            </LinkedIn>
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/gokulsellappan"
+            style={{ textDecoration: "none" }}
+          >
+            <Git>
+              <a>git</a>
+            </Git>
+          </a>
         </SocialIcon>
       </Content>
     </Container>
@@ -41,6 +59,7 @@ const SocialIcon = styled.div`
   height: 45px;
   margin: 0 0 48px 0;
   display: flex;
+  background-color: #e9f1ff;
 `;
 
 const FaceBook = styled.div`
@@ -52,7 +71,7 @@ const FaceBook = styled.div`
   text-align: center;
   padding: 8px 8px 8px 8px;
   margin-right: 8px;
-  span {
+  a {
     color: white;
     background: transparent;
     height: 16px;
@@ -72,7 +91,7 @@ const LinkedIn = styled.div`
   text-align: center;
   padding: 8px 8px 8px 8px;
   margin-right: 8px;
-  span {
+  a {
     color: white;
     background: transparent;
     height: 16px;
@@ -92,7 +111,7 @@ const Git = styled.div`
   text-align: center;
   padding: 8px 8px 8px 8px;
   margin-right: 8px;
-  span {
+  a {
     color: white;
     background: transparent;
     height: 16px;
