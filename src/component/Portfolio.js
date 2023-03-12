@@ -46,7 +46,7 @@ function Portfolio() {
             style={{ textDecoration: "none" }}
           >
             <ProjectBox>
-              <img src="/images/Game.png" alt="" />
+              <img src="/images/Game01.png" alt="" />
               <Content>
                 <TitleOne>
                   <span>Game </span>
